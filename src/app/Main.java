@@ -2,18 +2,29 @@ package app;
 
 public class Main {
 
+    static int a;
+    static int b;
+    static int c;
+    static int d;
+    static int e;
+    static double f;
+
+    // количество переменных можно уменьшить
+    // оставил отдельные переменные для каждой операции
+    // и структуру метода main, как в импортированном образце с GitHub
+
     public static void main(String[] args) {
         System.out.println("Calculator for base calculations");
         System.out.println("Version 1.0");
-        int a = 8;
-        int b = 2;
-        int c = add(a, b);
+        a = 8;
+        b = 2;
+        c = add(a, b);
         System.out.println(c);
-        int d = multiply(a, b);
+        d = multiply(a, b);
         System.out.println(d);
-        int e = sub(a, b);
+        e = sub(a, b);
         System.out.println(e);
-        double f = div(a, b);             //double вместо int что бы не терять дробную часть
+        f = div(a, b);             //double вместо int что бы не терять дробную часть
         System.out.println(f);
     }
 
